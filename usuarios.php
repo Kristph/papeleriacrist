@@ -1,7 +1,7 @@
 <?php 
   session_start();
   //connect.php
-  $server = 'localhost';
+  /*$server = 'localhost';
   $username = 'root';
   $password = '';
   $database = 'keybin';
@@ -10,7 +10,7 @@
   }
   if(!mysql_select_db($database)){
     exit('Error: could not select the database');
-  }
+  }*/
 ?>
 <html>
 
@@ -42,7 +42,7 @@
         </div>
         <div class="row">
           <div class="col s8 offset-s2 center-align ">
-            <?php
+           <!--  <?php
               $query = mysql_query("SELECT user,name,lastname FROM users");
               while($rowtwo = mysql_fetch_array($query)){
                 echo '
@@ -62,7 +62,7 @@
                 ;
               }
               echo '</table>';
-            ?>
+            ?> -->
           </div>
       </div>
 

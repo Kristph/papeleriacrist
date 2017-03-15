@@ -1,13 +1,8 @@
 @extends('layout')
 
 @section('content')
-	<nav>
-	  <div class="nav-wrapper">
-	    <a class="brand-logo" style="margin-left: 15px">Inicio de sesión</a>
-	  </div>
-	</nav>
 	<div class="row" style="margin-top: 100px">
-	    <form class="col s12" action="/site/verify" method="post">
+	    <form class="col s12" action="/verify" method="post">
 	      <div class="row">
 	        <div class="input-field col s3 offset-s4">
 	          <input id="user" type="text" class="validate" name="username">

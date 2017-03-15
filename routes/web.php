@@ -28,5 +28,12 @@
 Route::get('/about','PagesController@about');*/
 
 Route::get('/','SiteController@login');
-Route::get('/site/index','SiteController@index');
-Route::post('/site/verify','SiteController@verify');
+Route::get('/index','SiteController@index');
+Route::post('/verify','SiteController@verify');
+
+Route::get('/users','SiteController@users');
+Route::get('/storage','SiteController@storage');
+Route::get('/sells','SiteController@sells');
+Route::get('/buys','SiteController@buys');
+Route::get('/users/reg','SiteController@userReg');
+Route::get('/storage/reg','SiteController@storageReg');
